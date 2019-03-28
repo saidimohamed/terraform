@@ -1,11 +1,11 @@
 variable "aws_id" {
     description = "aws id"
-   default = "AKIAJR76RPGDSAR5R65A"
+   default = ""
 }
 
 variable "aws_key" {
   description = "aws secret key"
-  default     = "4+RZBP/sSmLCfPvyTn4KSBtTkUyQak2RwbOvxBof"
+  default     = ""
 }
 
 variable "aws_region" {
