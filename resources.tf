@@ -39,7 +39,9 @@ resource "aws_instance" "test2" {
   subnet_id = "subnet-0db3655fa8f7380b8"
   key_name = "ansible_Key"
   associate_public_ip_address = true
-
+  root_block_device {
+    delete_on_termination = true
+ }
   tags = {
     Name = "MSTest2"
   }
