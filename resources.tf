@@ -27,6 +27,9 @@ resource "aws_instance" "test" {
   associate_public_ip_address = true
 #  user_data = "${file("user_data.sh")}"
 
+  root_block_device {
+    delete_on_termination = true
+ }
   tags = {
     Name = "MSTest"
   }
